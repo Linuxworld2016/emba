@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+C	Makefile	/^C=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= -Wall -g -DLINUX -L.\/libs$/;"	m
+EMBA_DISABLE	emba_basic.h	9;"	d
+EMBA_ENABLE	emba_basic.h	8;"	d
+EMBA_LOG_DEBUG	emba_log.h	7;"	d
+EMBA_LOG_ERROR	emba_log.h	9;"	d
+EMBA_LOG_INFO	emba_log.h	8;"	d
+EMBA_LOG_SUCCESS	emba_log.h	10;"	d
+EMBA_LOG_WARN	emba_log.h	6;"	d
+EMBA_NO	emba_basic.h	7;"	d
+EMBA_OK	emba_basic.h	6;"	d
+LDFLAGS	Makefile	/^LDFLAGS= -lpthread -ldl $/;"	m
+LIBS_DIR	emba_basic.h	4;"	d
+Master	Makefile	/^Master=emba_agent$/;"	m
+__EMBA_BASIC__	emba_basic.h	2;"	d
+__EMBA_ENV__	emba_env.h	2;"	d
+__EMBA_FUNC__	emba_func.h	2;"	d
+__EMBA_LIST__	emba_list.h	2;"	d
+__EMBA_LOG__	emba_log.h	2;"	d
+__MY_COMMON_HEADER__	emba_sys.h	2;"	d
+comu	emba_env.h	/^    int (*comu)(struct module_info_t *mit);$/;"	m	struct:module_handle_t
+data	emba_list.h	/^	void *data;$/;"	m	struct:emba_list_t
+emba_free	emba_func.h	9;"	d
+emba_get_libsname	emba_env.c	/^int emba_get_libsname(char *emba_libs ,emba_list **head)$/;"	f
+emba_init_libs	emba_env.c	/^int emba_init_libs(emba_list **head)$/;"	f
+emba_list	emba_list.h	/^typedef struct emba_list_t emba_list;$/;"	t	typeref:struct:emba_list_t
+emba_list_init	emba_list.c	/^emba_list *emba_list_init()$/;"	f
+emba_list_push	emba_list.c	/^emba_list *emba_list_push(emba_list **head)$/;"	f
+emba_list_t	emba_list.h	/^struct emba_list_t{$/;"	s
+emba_log_exit	emba_log.c	/^int emba_log_exit(void)$/;"	f
+emba_log_fd	emba_log.c	/^int emba_log_fd = 0;$/;"	v
+emba_log_init	emba_log.c	/^int emba_log_init(void)$/;"	f
+emba_log_print	emba_log.c	/^int emba_log_print(int level ,char *msg ,...)$/;"	f
+emba_malloc	emba_func.h	6;"	d
+emba_show_libsname	emba_env.c	/^void emba_show_libsname(emba_list *head)$/;"	f
+exit	emba_env.h	/^    int (*exit)(struct module_info_t *mit);$/;"	m	struct:module_handle_t
+fd	emba_env.h	/^    int fd;$/;"	m	struct:module_info_t
+init	emba_env.h	/^    int (*init)(struct module_info_t *mit);$/;"	m	struct:module_handle_t
+main	emba_main.c	/^int main(int argc ,char **argv)$/;"	f
+mht	emba_env.h	/^	struct module_handle_t mht;$/;"	m	struct:module_t	typeref:struct:module_t::module_handle_t
+mit	emba_env.h	/^	struct module_info_t mit;$/;"	m	struct:module_t	typeref:struct:module_t::module_info_t
+mobjs	Makefile	/^mobjs = emba_main.o emba_env.o emba_log.o emba_list.o $/;"	m
+module_handle_t	emba_env.h	/^struct module_handle_t{$/;"	s
+module_info_t	emba_env.h	/^struct module_info_t{$/;"	s
+module_t	emba_env.h	/^struct module_t{$/;"	s
+name	emba_env.h	/^    char *name;$/;"	m	struct:module_info_t
+next	emba_env.h	/^	struct module_t *next;$/;"	m	struct:module_t	typeref:struct:module_t::module_t
+next	emba_list.h	/^	emba_list *next;	$/;"	m	struct:emba_list_t
+path	emba_env.h	/^    char *path;$/;"	m	struct:module_info_t
+pid	emba_env.h	/^    unsigned int pid;$/;"	m	struct:module_info_t
+prev	emba_list.h	/^	emba_list *prev;$/;"	m	struct:emba_list_t
+status	emba_env.h	/^    int status;$/;"	m	struct:module_info_t
+type	emba_env.h	/^    int type;$/;"	m	struct:module_info_t
+version	emba_env.h	/^    int version;$/;"	m	struct:module_info_t
+work	emba_env.h	/^    int (*work)(struct module_info_t *mit);$/;"	m	struct:module_handle_t
